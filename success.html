@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siswa Lulus</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Animasi */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Menggunakan animasi untuk kotak_login */
+        .kotak_login {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        /* Menjadikan teks bold */
+        .text-bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="kotak_login">
+        <h1 class="success-title" id="userDetails"></h1>
+    </div>
+
+    <div class="kotak_login">
+        <h1 class="success-message text-bold" id="successMessage"></h1>
+    </div>
+    <script>
+        // Get URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username');
+        const password = urlParams.get('password');
+
+        // Display success message
+        document.getElementById('userDetails').textContent = `${username}`;
+        document.getElementById('successMessage').textContent = `Selamat Anda lulus...!`;
+    </script>
+</body>
+</html>

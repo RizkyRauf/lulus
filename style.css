@@ -1,0 +1,109 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: sans-serif;
+    background: url('https://img.freepik.com/premium-photo/celestial-bodies-are-drawn-random-order-against-background-starry-sky-ai-generated_990017-4490.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+/* Overlay for darkening background */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+/* Centering Header */
+h1, h2 {
+    text-align: center;
+    font-weight: 300;
+    z-index: 1;
+    position: relative;
+}
+
+/* Styling for login container */
+.kotak_login {
+    width: 350px;
+    background: white;
+    margin: 20px auto;
+    padding: 30px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+/* Styling for login text */
+.tulisan_login {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Styling for form inputs */
+.form_login {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styling for submit button */
+.tombol_login {
+    background: #46de4b;
+    color: white;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tombol_login:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Styling for link (if needed) */
+.link {
+    color: #232323;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+/* Success Page Specific Styling */
+.success-title {
+    color: #010101;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: rgb(1, 80, 26);
+    text-align: center;
+    margin-top: 10px;
+}
